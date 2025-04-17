@@ -1,7 +1,7 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 // Created by: Emre Guzel
-// Created on: April 2 2025
+// Created on: April 17 2025
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -13,7 +13,7 @@ function randomNumberGenerator() {
   const usserNumber = parseInt(document.getElementById("user-number").value)
 
   // Cheking usserNumber is equal to randomNumber
-  if(usserNumber=== randomNumber){
+  if (usserNumber=== randomNumber){
     // Setting the the statment
     document.getElementById('result').innerHTML = '<p> You have guessed the corecet number!</p>'
   }
