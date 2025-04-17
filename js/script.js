@@ -5,13 +5,20 @@
 // This file contains the JS functions for index.html
 
 "use strict"
+// returns a random integer from 1 to 6 into variable "randomNumber"
+const randomNumber = Math.floor(Math.random() * 6) + 1
 
-function fahrenheitToCelsiusCalcualotr() {
+function randomNumberGenerator() {
   // Setting the varibles
-  const fahrenheitValue= parseInt(document.getElementById("fahrenheit").value)
-  const celsiusInput= document.getElementById("celsius")
-  const celsiusValue = (fahrenheitValue - 32) * 5/9
-  // clacualtoins
-  celsiusInput.value =celsiusValue.toFixed(3)
-  document.getElementById("formula").innerHTML = "Formula: (" + fahrenheitValue + "-"+32+") X 5/9" 
+  const usserNumber = parseInt(document.getElementById("user-number").value)
+
+  // Cheking usserNumber is equal to randomNumber
+  if(usserNumber=== randomNumber){
+    // Setting the the statment
+    document.getElementById('result').innerHTML = '<p> You have guessed the corecet number!</p>'
+  }
+  if (usserNumber !== randomNumber) {
+    // Setting the the statment
+    document.getElementById('result').innerHTML = '<p> The correct number was:' + ' '+ randomNumber + '</p>'
+  }
 }

@@ -28,34 +28,24 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Fahrenheit to celsius calculator </span>
+        <span class="mdl-layout-title">The Guess a Number program </span>
       </div>
     </header>
-    <h3 class="dimatoins"> Please enter Fahrenheit </h3>
+    <h3 class="number"> Pick a an intager between 1 and 6  </h3>
     <form action="#">
     <div class="mdl-textfield mdl-js-textfield" id="base-a">
-      <p class="Fahrenheit"> Fahrenheit:</p> 
-      <input  type="number" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="fahrenheit">
-      <label class="mdl-textfield__label" for="base-a-of-trapizoid"></label>
-      <span class="mdl-textfield__error">Input is not a number!</span>
-    </div>
-    <h5>=</h5>
-    <div class="mdl-textfield mdl-js-textfield" id="base-a">
-      <p class="celsius">Celsius:</p> 
-      <input type="number"   class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="celsius">
-      <label class="mdl-textfield__label" for="base-a-of-trapizoid"></label>
+      <input  type="number" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="user-number">
+      <label class="mdl-textfield__label" for="user-number"></label>
       <span class="mdl-textfield__error">Input is not a number!</span>
     </div>
       <br>
       <main id="click-me " class="mdl-layout__content">
-        <button id="click" type="button" onclick="fahrenheitToCelsiusCalcualotr()"
+        <button id="click" type="button" onclick="randomNumberGenerator()"
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-          Calcualte the Celsius
-        </button>
+          Check
       </main>
     </form>
-    <p id="formula">Formula : </p>
-
+    <div id="result"></div>
   </div>
   <br>
   <img class="Calculate" src="images/temperature.png" alt="Formula of rectengle">
